@@ -1,7 +1,7 @@
 
 <div class="fieldset-stacked" role="group" aria-labelledby="fieldset__example1">
 
-	<div id="fieldset__example1" class="fieldset-stacked__legend-number-1">Numbered Stacked Fieldset</div>
+	<div id="fieldset__example1" class="fieldset-stacked__legend-number-1"><h2 class="fieldset__heading-2">Numbered Stacked Fieldset</h2></div>
 	
 	<input type="text" placeholder="unstyled text field">
 
@@ -13,7 +13,7 @@
 
 <div class="fieldset-inline fieldset__top-border" role="group" aria-labelledby="fieldset__example2">
 
-	<span id="fieldset__example2" class="fieldset-inline__legend-number-2">Numbered Inline Fieldset</span>
+	<span id="fieldset__example2" class="fieldset-inline__legend-number-2"><h2 class="fieldset__heading-2">Numbered Inline Fieldset</h2></span>
 	
 	<input type="text" placeholder="unstyled text field">
 
@@ -27,7 +27,7 @@
 
 	<div class="fieldset-stacked__embedded-select">
 
-		<span id="fieldset__example3" class="fieldset-inline__legend-number-3">Numbered Stacked Fieldset with Inline Select Menu</span>
+		<span id="fieldset__example3" class="fieldset-inline__legend-number-3"><h2 class="fieldset__heading-2">Numbered Stacked Fieldset with Inline Select Menu</h2></span>
 
 		<label for="tbd" class="fcontrol__text-label-hidden">Fruit</label>
 
@@ -85,7 +85,7 @@
 
 	Unstyled button 2: <input type="radio">
 
-	<p>[Hiddent fieldset above]</p>
+	<p>[Hidden fieldset above]</p>
 
 </div>
 
@@ -112,4 +112,87 @@
 
 	Unstyled button 2: <input type="radio">
 
+</div>
+
+<div class="fieldset-controls fieldset__top-border" role="group" aria-labelledby="fieldset__example8">
+
+	<div class="fieldset-controls__container">
+
+		<div id="fieldset__example7" class="fieldset-controls__legend">Sub-Fieldsets</div>
+
+		<div class="fieldset-controls__buttons">
+			<button class="button__plus">
+				<span class="button__text">Add</span>
+			</button>
+			<button class="button__minus">
+				<span class="button__text">Remove</span>
+			</button>
+		</div>
+
+	</div>
+
+	<div class="subfieldset__container">
+	  <div id="subfieldset__example1" class="subfieldset__legend">Point</div>
+
+	  <div class="fcontrol__group-inline create__form-element-group">
+            <label for="geoLocationPoint-pointLongitude" class="fcontrol__text-label-inline">Point Longitude</label>
+            <input id="geoLocationPoint-pointLongitude" class="fcontrol__text-field-inline" type="text" placeholder="Text to enter here">
+            <span class="fcontrol__invalid-flag">Error message</span>
+	  </div>
+
+	  <div class="fcontrol__group-inline create__form-element-group">
+            <label for="geoLocationPoint-pointLatitude" class="fcontrol__text-label-inline">Point Latitude</label>
+            <input id="geoLocationPoint-pointLatitude" class="fcontrol__text-field-inline" type="text" placeholder="Text to enter here">
+            <span class="fcontrol__invalid-flag">Error message</span>
+	  </div>
+	</div>
+
+	<div class="subfieldset-inline__container">
+	  <div class="fcontrol__group-inline create__form-element-group">
+            <label for="geoLocationPlace" class="fcontrol__text-label-inline">Place</label>
+            <input id="geoLocationPlace" class="fcontrol__text-field-inline" type="text" placeholder="Text to enter here">
+            <span class="fcontrol__invalid-flag">Error message</span>
+	  </div>
+	</div>
+
+	<div class="subfieldset-inline__container">
+	  <div class="fcontrol__group-inline create__form-element-group">
+	  <label for="fcontrol__example-label3" class="fcontrol__textarea-label-inline">Polygon</label>
+	  <div class="fcontrol__textarea-group">
+		<textarea id="fcontrol__example-label4" class="fcontrol__textarea-inline" placeholder="Text to enter here" required></textarea>
+		<span class="fcontrol__invalid-flag">Error message</span>
+		<div class="fcontrol__textarea-caption">Paste in GeoJSON or KML formatted text.</div>
+	</div>
+</div>
+
+</div>
+
+<div class="fieldset-controls fieldset__top-border" role="group" aria-labelledby="fieldset__example9">
+
+	<div id="fieldset__example8" class="fieldset-controls__legend">Inline Text Input with Embedded Controls</div>
+
+	<div class="fieldset-controls__container-small">
+
+		<div class="fieldset-controls__buttons-small">
+			<button class="button__plus-small">
+				<span class="button__text">Add</span>
+			</button>
+			<button class="button__minus-small">
+				<span class="button__text">Remove</span>
+			</button>
+		</div>
+
+	</div>
+
+	<div class="fcontrol__group-inline create__form-element-group">
+          <label for="fcontrol__example-label3" class="fcontrol__text-label-inline">Name Identifier</label>
+          <input id="fcontrol__example-label3" class="fcontrol__text-field-inline" type="text" placeholder="Text to enter here">
+          <span class="fcontrol__invalid-flag">Error message</span>
+	</div>
+
+	<div class="fcontrol__group-inline create__form-element-group">
+          <label for="fcontrol__example-label3" class="fcontrol__text-label-inline">Name Identifier</label>
+          <input id="fcontrol__example-label3" class="fcontrol__text-field-inline" type="text" placeholder="Text to enter here">
+          <span class="fcontrol__invalid-flag">Error message</span>
+	</div>
 </div>

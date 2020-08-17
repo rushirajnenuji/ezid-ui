@@ -35,9 +35,8 @@
 	flex-flow: column nowrap;
 }
 
-// Not working. Remove?:
 .login-modal__label {
-	// @extend %screen-readers-only;
+	@extend %screen-readers-only;
 }
 
 .login-modal__form-element {

@@ -37,9 +37,18 @@
       <div class="fcontrol__group-stacked">
         <label for="manage__field1" class="fcontrol__text-label-hidden">Search Your Identifiers</label>
         <input id="manage__field1" class="fcontrol__text-field-stacked" type="search" placeholder="Full text search using words about or describing the identifier.">
-        <span class="fcontrol__invalid-flag">Your search must not be empty</span>
       </div>
       <button class="manage__simple-search-button">Search Your Identifiers</button>
+    </div>
+    <div class="fcontrol__help-wrapper">
+      <div class="fcontrol__help">EZID search uses AND logic which means ALL terms entered into a search box must be present in order to show up in the results.
+        <br/><a class="hide" href="#">Read more &dArr;</a></div>
+      <div class="read-more-content">
+        <div class="fcontrol__help">&nbsp;&nbsp;&nbsp;&nbsp;&#8226; Example AND search: "trees fruit" will return any search results with both keywords trees and fruit.</div>
+        <div class="fcontrol__help">If you would like to use OR logic which means ANY terms entered in the search box can be present in the results, please add an "OR" to the search query.</div>
+        <div class="fcontrol__help">&nbsp;&nbsp;&nbsp;&nbsp;&#8226; Example OR search: "trees OR fruit" will return any search results with the keywords trees or fruit.
+          <br/><a class="read-more-hide" href="#">&uArr; Read less</a></div>
+      </div>
     </div>
 
     <details class="showhide">
@@ -79,15 +88,20 @@
       <div class="row">
         <div class="col-md-6 manage__form-element-container">
           <div class="fieldset-stacked manage__fieldset" role="group" aria-labelledby="manage__fieldset1">
-            <div id="manage__fieldset1" class="fieldset-stacked__legend manage__fieldset-legend">Publication Date</div>
+            <div id="manage__fieldset1" class="fieldset-stacked__legend manage__fieldset-legend">Publication Year</div>
             <div class="fcontrol__inline-groups">
               <div class="fcontrol__group-inline">
                 <label for="manage__field6" class="fcontrol__text-label-inline manage__text-label-inline">From</label>
-                <input id="manage__field6" class="fcontrol__text-field-inline" type="text" placeholder="Ex. 2015-08-13 21:30:20 UTC">
+                <div class="fcontrol__text-field-group">
+
+                  <input id="manage__field6" class="fcontrol__text-field-inline-squish" type="text" placeholder="Ex. 2015-08-13 21:30:20 UTC">
+                </div>
               </div>
               <div class="fcontrol__group-inline">
                 <label for="manage__field7" class="fcontrol__text-label-inline manage__text-label-inline">To</label>
-                <input id="manage__field7" class="fcontrol__text-field-inline" type="text" placeholder="Ex. 2015-08-13 21:30:20 UTC">
+                <div class="fcontrol__text-field-group">
+                  <input id="manage__field7" class="fcontrol__text-field-inline-squish" type="text" placeholder="Ex. 2015-08-13 21:30:20 UTC">
+                </div>
               </div>
             </div>
           </div>
@@ -130,11 +144,16 @@
             <div class="fcontrol__inline-groups">
               <div class="fcontrol__group-inline">
                 <label for="manage__field9" class="fcontrol__text-label-inline manage__text-label-inline">From</label>
-                <input id="manage__field9" class="fcontrol__text-field-inline" type="text" placeholder="Ex. 2015-08-13 21:30:20 UTC">
+                <div class="fcontrol__text-field-group">
+
+                  <input id="manage__field9" class="fcontrol__text-field-inline-squish" type="text" placeholder="Ex. 2015-08-13 21:30:20 UTC">
+                </div>
               </div>
               <div class="fcontrol__group-inline">
                 <label for="manage__field10" class="fcontrol__text-label-inline manage__text-label-inline">To</label>
-                <input id="manage__field10" class="fcontrol__text-field-inline" type="text" placeholder="Ex. 2015-08-13 21:30:20 UTC">
+                <div class="fcontrol__text-field-group">
+                  <input id="manage__field10" class="fcontrol__text-field-inline-squish" type="text" placeholder="Ex. 2015-08-13 21:30:20 UTC">
+                </div>
               </div>
             </div>
           </div>
@@ -143,13 +162,18 @@
           <div class="fieldset-stacked manage__fieldset" role="group" aria-labelledby="manage__fieldset3">
             <div id="manage__fieldset3" class="fieldset-stacked__legend manage__fieldset-legend">Update Date</div>
             <div class="fcontrol__inline-groups">
-              <div class="fcontrol__group-inline">
+              <div class="fcontrol__group-inline--invalid">
                 <label for="manage__field11" class="fcontrol__text-label-inline manage__text-label-inline">From</label>
-                <input id="manage__field11" class="fcontrol__text-field-inline" type="text" placeholder="Ex. 2015">
+                <div class="fcontrol__text-field-group">
+                  <input id="manage__field11" class="fcontrol__text-field-inline-squish" type="text" placeholder="Ex. 2015">
+                  <span class="fcontrol__invalid-flag">Please use format YYYY-MM-DD.</span>
+                </div>
               </div>
               <div class="fcontrol__group-inline">
                 <label for="manage__field12" class="fcontrol__text-label-inline manage__text-label-inline">To</label>
-                <input id="manage__field12" class="fcontrol__text-field-inline" type="text" placeholder="Ex. 2016">
+                <div class="fcontrol__text-field-group">
+                  <input id="manage__field12" class="fcontrol__text-field-inline-squish" type="text" placeholder="Ex. 2016">
+                </div>
               </div>
             </div>
           </div>
@@ -192,14 +216,16 @@
           </div>
         </div>
         <div class="col-md-6">
-          <!-- empty bootstrap column -->
+          <button class="button__primary manage__reset-button">Search Your Identifiers</button>
+          <button class="button__primary manage__reset-button">Reset Search Fields</button>
         </div>
       </div>
     </details>
 
     <div class="customize-table">
       <div class="customize-table__heading-wrapper">
-        <h2 class="customize-table__heading">Your Identifiers (6000)</h2>
+        <h2 class="customize-table__heading">610,004 matches found</h2>
+        <button class="customize-table__button-all">See All Identifiers</button>
       </div>
       <button class="customize-table__button-customize">Customize View</button>
     </div>
@@ -208,13 +234,12 @@
 
       <div class="fcontrol__select-group-inline manage__identifiers-select">
         <label for="manage__select4" class="fcontrol__select-label-inline">View identifiers owned by:</label>
-        <select name="url-here" id="manage__select4" class="fcontrol__select">
-          <option value="">Default top level ownership for logged in person</option>
-          <option value="">Department A</option>
-          <optgroup label="Institution B">
-            <option value="">Username 1</option>
-            <option value="">Username 2</option>
-          </optgroup>
+        <select name="url-here" id="manage__select4" class="fcontrol__select select__heirarchical">
+          <option value="">[cu-ciesin]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Center for International Earth Science Information Network (me)
+            </option>
+          <option value="">[ucb-lawlib]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berkeley Law Library</option>
+          <option value="">[caltech_wormbase]&nbsp;CalTech Biology</option>
+          <option value="">[cgd_cesm]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Climate & Global Dynamics-Community Earth System Model (by proxy)</option>
         </select>
       </div>
 

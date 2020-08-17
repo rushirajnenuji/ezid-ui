@@ -1,14 +1,20 @@
-// ##### Styles for EZID ##### //
+// ##### New Styles for EZID ##### //
 
-// ***** Global Variables Shared with EZID Developers ***** //
+// Test with red borders
+// * {
+//  border: 1px solid red !important;
+// }
+
+
+// ***** Global Settings ***** //
 @import '../../src/styles/variables';
 
 // ***** Vendor Libraries ***** //
-@import 'bootstrap';
+@import '../../src/styles/bootstrap';
 
 @import 'mixins';
 @import 'fonts';
-@import 'testing';
+@import 'testing'; // Comment out before production
 
 // ***** Elements ***** //
 
@@ -17,23 +23,20 @@
 @import 'form-controls';
 @import 'headings';
 @import 'links';
+@import 'pre';
+@import 'diagram';
 
 // ***** Components ***** //
 
 @import 'accordion';
-@import 'cite';
-@import 'citation';
 @import 'customize-table';
-@import 'download';
 @import 'footer';
 @import 'header';
 @import 'home-banner';
-@import 'identifier-boxes';
-@import 'identifier-metadata';
 @import 'login-menu';
 @import 'login-modal';
+@import 'proxy-modal';
 @import 'pagination';
-@import 'share';
 @import 'showhide';
 @import 'sidebox';
 @import 'tab';
@@ -43,18 +46,26 @@
 
 // ***** Layouts ***** //
 
-@import 'contact';
 @import 'create';
+@import 'dashboard';
+@import 'general';  // used for all non-primary pages (e.g. contact)
 @import 'home';
+@import 'loading';
 @import 'manage';
+// Pwreset page uses the 'general' css
 @import 'search';
 @import 'search-results';
+
+// Test with red borders
+// * {
+//   border: 1px solid red !important;
+// }
 
 // ***** Global Styles ***** //
 
 body {
   margin: 0 10px;
-  font-family: 'KievitWeb', Arial, sans-serif;
+  font-family: 'KievitWeb';
 }
 
 abbr {
